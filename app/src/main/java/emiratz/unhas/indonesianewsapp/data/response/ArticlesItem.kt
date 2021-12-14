@@ -1,7 +1,6 @@
 package emiratz.unhas.indonesianewsapp.data.response
 
 import com.google.gson.annotations.SerializedName
-import emiratz.unhas.indonesianewsapp.model.Source
 
 data class ArticlesItem(
 

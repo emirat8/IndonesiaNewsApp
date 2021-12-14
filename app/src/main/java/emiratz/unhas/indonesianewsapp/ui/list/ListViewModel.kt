@@ -6,7 +6,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import emiratz.unhas.indonesianewsapp.data.network.ApiConfig
 import emiratz.unhas.indonesianewsapp.data.response.ArticlesItem
-import emiratz.unhas.indonesianewsapp.model.NewsResponse
+import emiratz.unhas.indonesianewsapp.data.response.NewsResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -18,7 +18,7 @@ class ListViewModel : ViewModel() {
     fun getLatestNews(): LiveData<List<ArticlesItem>> {
         _isLoading.value = true
         val news = MutableLiveData<List<ArticlesItem>>()
-        ApiConfig.provideApiService().getNews("id", "technology", API_KEY)
+        ApiConfig.provideApiService().getNews("id", API_KEY)
             .enqueue(object : Callback<NewsResponse> {
                 override fun onResponse(
                     call: Call<NewsResponse>,
