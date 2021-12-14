@@ -41,8 +41,7 @@
         app:layout_constraintBottom_toTopOf="@id/tv_date_news"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/card_img"
-        app:layout_constraintTop_toTopOf="@id/card_img"
-        tools:text="Pembuatan Hidroponik" />
+        app:layout_constraintTop_toTopOf="@id/card_img" />
 
     <TextView
         android:id="@+id/tv_date_news"
@@ -54,7 +53,6 @@
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="@id/tv_title_news"
         app:layout_constraintStart_toStartOf="@id/tv_title_news"
-        app:layout_constraintTop_toBottomOf="@id/tv_title_news"
-        tools:text="Senin, 19 Juli 2021" />
+        app:layout_constraintTop_toBottomOf="@id/tv_title_news" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
