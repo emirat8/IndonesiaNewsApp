@@ -4,6 +4,7 @@ import android.util.Log
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import emiratz.unhas.indonesianewsapp.BuildConfig
 import emiratz.unhas.indonesianewsapp.data.network.ApiConfig
 import emiratz.unhas.indonesianewsapp.data.response.ArticlesItem
 import emiratz.unhas.indonesianewsapp.data.response.NewsResponse
@@ -42,7 +43,7 @@ class ListViewModel : ViewModel() {
     }
 
     companion object {
-        private const val API_KEY = "1079f9998fb443a8baa11dc2d0036406"
+        private const val API_KEY = BuildConfig.Api_Key
         private const val TAG = "ListViewModel"
     }
 }
